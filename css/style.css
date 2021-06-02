@@ -1,0 +1,102 @@
+.header-top{text-align:right; height:70px; padding:0 10px; position:fixed; top:0; width:100%; z-index:999; box-sizing:border-box}
+.toggle-menu{width:50px; height:50px; display:inline-block; position:relative; top:10px}
+.toggle-menu i{position:absolute; display:block; height:2px; background:white; width:30px; left:10px; transition:all .3s}
+.toggle-menu i:nth-child(1){top:16px}
+.toggle-menu i:nth-child(2){top:24px}
+.toggle-menu i:nth-child(3){top:32px}
+.open-menu i:nth-child(1){top:25px; -webkit-transform:rotateZ(45deg); transform:rotateZ(45deg)}
+.open-menu i:nth-child(2) {background:transparent}
+.open-menu i:nth-child(3) {top:25px; -webkit-transform:rotateZ(-45deg); transform:rotateZ(-45deg)}
+nav{height:0; 	opacity:0; box-sizing:border-box; background:rgba(0, 47, 77, .25); position:fixed; top:70px; right:15px; width:30%; transition:all 1s}
+.open-menu ~ nav{opacity:1; 	padding:20px 0; z-index:99; height:calc(90vh - 70px); width:320px; position:fixed; right:15px; top:15px}
+nav li a{font-size:2rem; display:block; padding:20px 30px; transition:background .3s}
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{background:#fff; width:8px; height:8px; margin:-4px 0 0 -4px}
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span{width:16px; height:16px; margin:-8px 0 0 -8px; background:transparent; box-sizing:border-box; border:2px solid #fff}
+
+/*header*/
+#header h1{color:#fff; position:absolute; top:100px; left:40px; font-size:25px; font-weight:lighter; z-index:4}
+#header h1 em{font-weight:bold}
+#header div.skipNav{position:fixed; top:40px; right:40px; width:46px; height:46px; line-height:50px; border-radius:50px; text-align:center; background:#fff; z-index:4}
+#header div.skipNav a{position:relative; display:inline-block; width:20px; height:13px; overflow:hidden}
+#header div.skipNav a:before{content:''; position:absolute; top:0; left:0; width:100%; height:1px; background:#222}
+#header div.skipNav a:after{content:''; position:absolute; bottom:0; left:0; width:100%; height:1px; background:#222}
+#header div.skipNav span{position:absolute; top:50%; left:0; transform:translate(0, -50%); width:100%; height:1px; text-indent:-999px; overflow:hidden; background:#222}
+#header div.skipNav.open + #menu{right:0}
+#menu ul{width:100%; height:100%; padding:10%; box-sizing:border-box; background:#e0e0e0}
+#menu ul li{line-height:44px; width:80%}
+#menu ul li a{display:inline-block; font-size:20px; color:#9b9b9b; font-weight:bold}
+#menu ul li.active a,
+#menu ul li a:hover{color:#222}
+#menu li.active a{color:#fff}
+
+/*contents*/
+.section{background-color: #252525;
+	background-size: 48px 48px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px, 0px 36px, 4px 2px, 29px 6px, 33px 30px;
+	background-image: linear-gradient(335deg, #171717 23px, transparent 23px), linear-gradient(155deg, #171717 23px, transparent 23px), linear-gradient(335deg, #171717 23px, transparent 23px), linear-gradient(155deg, #171717 23px, transparent 23px), linear-gradient(335deg, #171717 10px, transparent 10px), linear-gradient(155deg, #171717 10px, transparent 10px), linear-gradient(335deg, #171717 10px, transparent 10px), linear-gradient(155deg, #171717 10px, transparent 10px);
+}
+.section.intro{background-color:#68d6b3;
+	background-size: 48px 48px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px, 0px 36px, 4px 2px, 29px 6px, 33px 30px;
+	background-image: linear-gradient(335deg, #3dcfa1 23px, transparent 23px), linear-gradient(155deg, #3dcfa1 23px, transparent 23px), linear-gradient(335deg, #3dcfa1 23px, transparent 23px), linear-gradient(155deg, #3dcfa1 23px, transparent 23px), linear-gradient(335deg, #3dcfa1 10px, transparent 10px), linear-gradient(155deg, #3dcfa1 10px, transparent 10px), linear-gradient(335deg, #3dcfa1 10px, transparent 10px), linear-gradient(155deg, #3dcfa1 10px, transparent 10px);
+}
+
+.fixedBox{position:absolute; top:30px; left:30px; width:90%; height:calc(100% - 60px);  z-index:1; display:flex; align-items:center}
+.fixedBoxInn{width:50%; margin-left:auto}
+.imgArea{width:50%}
+.imgArea img{width:100%; max-width:400px; max-height:500px; margin:auto; display:block}
+.section h2{color:#fff; position:absolute; top:30px; left:30px; padding-right:43px; font-size:17px}
+.section h2:after{content:''; position:absolute; top:50%; right:0; width:40px; height:1px; background:#fff}
+.section .detail{text-align:left; color:#82888a}
+.section .detail span.num-now{font-size:2rem; display:inline-block; margin-bottom:20px}
+.section .detail h3{font-size:3rem}
+#intro .detail h3{color:#fff; font-size:7rem}
+.section .detail span.type{display:inline-block; font-size:25px; font-weight:700}
+.section .detail ul{margin:10px 0}
+.section .detail ul li{line-height:30px; font-size:16px; word-break:keep-all}
+.section .detail div.btn-box{width:100%}
+.section .detail div.btn-box a{display:inline-block; width:45%; margin:0 5px 5px 0; line-height:45px; border:1px solid #797979; text-align:center; font-size:14px; font-weight:700}
+.section .detail div.btn-box a:hover{background:#222; color:#fff}
+.section .detail p.notice{font-size:11px; word-break:keep-all}
+
+@media screen and (max-width:960px){
+  .section .detail{position:static; padding:30px}
+  .section .detail span.type{margin:2% 0; font-size:18px; font-weight:normal}
+  .section .detail p.notice{display:none}
+  .section .detail div.btn-box a{line-height:30px} 
+  #header h1{top:40px; left:100px}
+  #header div.skipNav{top:30px}
+  #menu{width:80%; padding:18px}
+  #menu ul li{line-height:50px}
+  #menu ul li a{font-size:20px} 
+  #actions{right:20px}
+}
+
+@media screen and (max-width:767px) {
+	.section.Portfolio .detail ul{display:none}
+	.section .detail{padding:20px 0 30px}
+	.section .detail span.num-now{font-size:1rem;}
+	.section .detail h3{font-size:1.8rem}
+	.section.Profile .detail{margin-top:100px}
+  .section .detail ul li{font-size:14px; line-height:20px}
+  .section .detail span.type{font-size:14px}
+  .section .detail p.text{font-size:15px; line-height:20px}
+  #section0 .detaila{margin-top:100px}
+  #intro .detail{padding-top:80px}
+  #intro .detail h3{font-size:4rem}
+  .fixedBox{flex-direction:column; left:50%; transform:translate(-50%)}
+  .imgArea{width:100%; margin-top:40px}
+  .fixedBoxInn{width:100%}
+	nav ul{flex-direction:column}
+	nav li{margin-top:1px}
+  nav li a{font-size:1.5em}
+  .imgArea img{max-width:300px; margin:10px 0}
+}
+
+@media screen and (max-width:400px) {
+	nav li a{padding:3px}
+}

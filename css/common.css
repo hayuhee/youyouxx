@@ -1,0 +1,213 @@
+.clearfix:after{content:''; display:block; clear:both}
+.clearfix{*zoom:1}
+
+/*body scroll*/
+.not_scroll{overflow:hidden; width:100%; height:100%}
+
+/* skip navi */
+.skip a{display:block; position:absolute; left:0; top:-9999em; z-index:9999; _overflow:hidden; width:100%; background-color:#24c2ca; color:#FFF; text-align:center; text-decoration:none; line-height:2.2}
+.skip a:hover, .skip a:active, .skip a:focus{top:0}
+/* // skip navi */
+
+/* 상세페이지 헤더 */
+.sub_header .header-area{height:50px; background:#fff; border-bottom:2px solid #ef5555; padding:0 0; position:relative}
+.sub_header .back_btn{position:absolute; left:15px; top:50%; margin-top:-11px}
+.sub_header .back_btn span, .sub_header .back_btn span i{font-size:1rem; font-weight:700; color:#ef5555;}
+.sub_header .back_btn button img{width:13px}
+.sub_header .back_btn .side_menu_back_btn img{width:12px}
+.sub_title_area{text-align:center; line-height:50px}
+.sub_title_area strong{font-size:1.3rem; color:#ef5555}
+.sub_title_area strong i{font-size:1.2rem; color:#ef5555}
+.rightIcon{position:absolute; right:15px; top:50%; margin-top:-11px}
+.rightIcon img{width:20px}
+.rightIcon i{color:#ef5555; font-size:18px}
+.rightIcon2{position:absolute; right:45px; top:50%; margin-top:-11px}
+.rightIcon2 .like_controls{position:initial}
+.leftIcon{position:absolute; left:15px; top:50%; margin-top:-11px}
+.leftIcon img{width:20px}
+.leftIcon i{color:#ef5555; font-size:20px}
+
+/* 동네분석 헤더 */
+.anaHeader .header-area{background:none; border-bottom:none}
+/* //동네분석 헤더 */
+/* //상세페이지 헤더 */
+
+/* //button css */
+
+/* select css */
+.select_area{display:block; vertical-align:top; position:relative; background:#fff; height:35px; padding:0 9px; border:solid 1px #dadada; 
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.select_area2{display:inline-block; position:relative; height:35px; border:solid 1px #dadada; padding:0 9px; background:#fff; -webkit-box-sizing:border-box; box-sizing:border-box; vertical-align:top}
+.select_area select {color:#444; font-weight:300; width:100%; height:32px; border:none;  padding-right:40px; 
+  border-radius:0px; 
+    -webkit-border-radius:0px; 
+    -moz-border-radius:0px;
+    appearance:none;
+    -webkit-appearance:none;
+    background:#fff url(/html/img/bottom-arrow.svg) 98% 50% no-repeat; background-size:20px;
+}
+.select_area select:focus{border:none}
+/* // select css */
+
+/* input box */
+input[type='text'], 
+input[type='password'], 
+input[type='tel'], 
+input[type='number']{font-size:1rem; color:#444; font-weight:300; text-indent:15px; background:#fff; border:1px solid #d8d9e0; width:100%; height:40px; margin-top:10px; border-radius:0px;
+    -webkit-border-radius:0px; 
+    -moz-border-radius:0px;
+    appearance:none;
+    -webkit-appearance:none
+}
+/* // input box */
+
+
+/* input type = file css */
+.file-upload{position:absolute; left:-9999px}
+.form-group{font-size:14px; font-weight:300; color:#444; text-overflow:ellipsis; display:block; width:100%; height:44px; border:1px solid #d8d9e0; text-indent:10px; border-radius:0px; -webkit-appearance:none}
+.input-group input[type='text']{text-overflow:ellipsis; width:160px; white-space:nowrap; word-wrap:normal; overflow:hidden; display:block; border:none; background:none}
+.file{visibility:hidden; position:absolute}
+/* //input type = file css */
+
+/* checked box */
+input[class='checkbox'] + label span {width:20px; height:20px; margin-right:8px; border:1px solid #d4d5db; display:inline-block}
+input[class='checkbox']:checked + label span{background:#fff url(../img/checked.svg) no-repeat center; background-size:15px}
+/* // checked box */
+
+
+/* 레이어팝업 */
+.pop_box{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100}
+.pop_box div.pop_bg{position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.6;filter:alpha(opacity=60)}
+.pop_box div.pop_contents{position:absolute;top:50%;left:50%;width:310px;height:600px; background:#fff}
+/* 레이어팝업 */
+
+/* width:100% 레이어팝업 */
+.layPopHeader{}
+.layPopHeader{width:100%; height:50px; background:#fff; border-bottom:2px solid #ef5555; padding:0 0; position:relative}
+.layPopHeader .leftIcon{position:absolute; left:15px; top:50%; margin-top:-11px}
+.layPopHeader .leftIcon img{width:20px}
+.layPopHeader .sub_title_area{text-align:center; line-height:50px}
+.modal{text-align:center; overflow:hidden; display:none; position:fixed; top:50%; left:50%; z-index:999999999; width:100%; height:100vh; background:#fff; transform:translate(-50%, -50%)}
+.modal.on{align-items:center; display:block; flex-direction:column; overflow:auto;}
+/* width:100% 레이어팝업 */
+
+/* 아코디언메뉴 */
+.acodiunMenu .category{border-bottom:1px solid #ddd}
+.acodiunMenu .menu-title, .menu-sub{padding:15px}
+.acodiunMenu .menu-title{background:#fff; position:relative; border-top:1px solid #ddd}
+.acodiunMenu .menu-sub{background:#f1f1f1; margin:10px; line-height:1.3; display:none}
+.acodiunMenu .menu-title span{text-indent:-9999px; display:inline-block; width:13px; height:7px; background:url('../img/bottom-arrow.svg') no-repeat center; vertical-align:middle; margin-right:10px; overflow:hidden; position:absolute; right:0; top:50%; margin-top:-4px; clip:auto}
+.acodiunMenu .menu-title.on span{background:url('../img/bottom-arrow.svg') no-repeat center;
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg)}
+/* //아코디언메뉴 */
+
+/* 버튼 1개 */
+.btn_comm01, input[type="submit"]{font-size:1rem; text-align:center; color:#fff; display:block; width:100%; height:50px; border:none; background:#ef5555; margin-top:15px}
+.btn_comm01 span, input[type="submit"] span{color:#fff}
+/* //버튼 1개 */
+
+/* 버튼 2개 */
+.btn_commBox{display:flex; flex-wrap:wrap}
+.btn_commBox button, .btn_commBox a{font-size:1rem; text-align:center; display:block; flex:1; height:50px; line-height:50px; padding:0; border-top:none}
+.btn_commBox .btn_commL{color:#333; background:#ddd}
+.btn_commBox .black{color:#fff; background:#4a4a4a}
+.btn_commBox .btn_commR{color:#fff; background:#ef5555}
+/* //버튼 2개 */
+
+button:disabled,
+button[disabled]{background:#ccc; color:#666666}
+
+/* 체크박스 */
+.check-label input[type="checkbox"] + label span{width:20px; height:20px; margin-right:8px; background:#ddd url(/html/img/checked.svg) no-repeat center; background-size:12px; border:1px solid #d4d5db; display:inline-block; vertical-align:middle; border-radius:50%}
+.check-label input[type="checkbox"]:checked + label span{background:#ef5555 url(/html/img/checked.svg) no-repeat center; border-color:#ef5555; background-size:12px}
+.check-label input[type="checkbox"]{display:none}
+/* //체크박스 */
+
+/* 스와이프 delete */
+.swipeable{position:relative; overflow:hidden; vertical-align:bottom; -webkit-backface-visibility:hidden; backface-visibility:hidden; background:#fff}
+.swipeable .inner2{position:relative; z-index:2; -webkit-backface-visibility:hidden;         backface-visibility:hidden; background:#fff; padding:10px; cursor:-webkit-grab; cursor:grab; color:#555}
+.swipeable .inner2:active{cursor:-webkit-grabbing; cursor:grabbing}
+.swipeable .action-button{position:absolute; z-index:1; right:0; top:0; width:100%; height:100%; padding:24px 20px 24px 0; cursor:pointer; text-align:right; color:white; letter-spacing:2px; font-size:12px; transition:.3s ease}
+.swipeable .action-button.delete{background:#d64d4d}
+.swipeable .action-button .text{color:#fff; position:absolute; right:25px; top:50%; margin-top:-6px}
+
+/* 비교하기 */
+.compareArea .check{text-align:right; color:white; letter-spacing:2px; font-size:12px; position:absolute; z-index:0; right:0; top:0; width:100%; height:100%; padding:24px 20px 24px 0; cursor:pointer; transition:.3s ease}
+.swipeable .check-label{position:absolute; height:40px; top:50%; margin-top:-20px; left:30px}
+.inner1{transform:translate3d(0px, 0px, 0px)}
+.sliedTrans {
+  -webkit-transition:all 0.2s ease;  
+  -moz-transition:all 0.2s ease;  
+  -o-transition:all 0.2s ease;  
+  -ms-transition:all 0.2s ease;  
+  transition:all 0.2s ease;
+}
+.sliedTrans-active {transform:translate3d(100px, 0px, 0px)}
+
+
+/* 탭메뉴 */
+.menu_tab{width:100%; background:#fff; display:flex; flex-direction:row; flex-wrap:nowrap; justify-content:flex-start; align-items:stretch; align-content:stretch}
+.menu_tab li{flex:1}
+.menu_tab li button{color:#aaa; text-align:center; width:100%; display:block; padding:15px 10px; background:#ddd}
+.menu_tab li.active button{font-weight:700; color:#fff; background:#ef5555}
+
+/* 스크롤 상단 고정 */
+.jbFixed{position:fixed; top:50px; z-index:99999999}
+
+/* 지하철 노선 컬러 */
+/*
+
+1호선, 2호선, 3호선, 4호선 , 5호선, 6호선, 7호선, 8호선, 9호선, 분당선, 인천선, 신분당선, 경의중앙선, 경춘선, 공항선, 의정부선, 수인선, 에버라인, 자기부상, 우이신설선, 인천1, 인천2, 의정부, 경강선, 서해선  */
+
+.subwayLine01{background:#015eab}
+.subwayLine02{background:#1fb259}
+.subwayLine03{background:#DD5C32}
+.subwayLine04{background:#00aae7}
+.subwayLine05{background:#9c60a8}
+.subwayLine06{background:#c77539}
+.subwayLine07{background:#677617}
+.subwayLine08{background:#ed2274}
+.subwayLine09{background:#B49628}
+.subwayLine10{background:#DBA828}
+.subwayLine11{background:#6084B4}
+.subwayLine12{background:#971f2d}
+.subwayLine13{background:#76B69B}
+.subwayLine14{background:#2D9B76}
+.subwayLine15{background:#6AA8CD}
+.subwayLine16{background:#E78522}
+.subwayLine17{background:#DBA828}
+.subwayLine18{background:#70B16D}
+.subwayLine19{background:#EA955C}
+.subwayLine20{background:#D2CA29}
+.subwayLine21{background:#85B5E2}
+.subwayLine22{background:#FFA340}
+.subwayLine23{background:#FEB768}
+.subwayLine24{background:#187CE8}
+.subwayLine25{background:#85BF37}
+
+.subwayLine26{background:#3CB44A} /* 대전1 */
+.subwayLine27{background:#3CB44A} /* 광주1 */
+
+.subwayLine28{background:#3CB44A} /* 대구1 */
+.subwayLine29{background:#FDBF56} /* 대구2 */
+.subwayLine30{background:#F0602F} /* 대구3 */
+
+.subwayLine31{background:#FA5F2C} /* 부산1 */
+.subwayLine32{background:#37B42D} /* 부산2 */
+.subwayLine33{background:#BF9F1E} /* 부산3 */
+.subwayLine34{background:#2E69C5} /* 부산4 */
+.subwayLine35{background:#80A8D8} /* 부산 동해 */
+.subwayLine36{background:#893BB6} /* 부산 김해경전철 */
+
+/* 파라노마 */
+@media screen and (max-width:500px) {
+  .panorama {width: 100%;height:272px !important}
+}
+
+@media screen and (max-width:1440px) {
+ .panorama {width: 100%;height:240px !important}
+}
